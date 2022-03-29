@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<set>
+	<person>
+		<id>53228242</id>
+		<name>Василий Иванов</name>
+		<coordinates>72° . 55°</coordinates>
+		<creation_date>Tue Mar 29 13:11:06 MSK 2022</creation_date>
+		<height>178</height>
+		<weight>57.03</weight>
+		<birthday>1986-06-02</birthday>
+		<eyeColor>GREEN</eyeColor>
+		<location>-97:-15:0.06 Место: США</location>
+	</person>
+	<person>
+		<id>157464563</id>
+		<name>Евгений Сидоров</name>
+		<coordinates>102° . 171°</coordinates>
+		<creation_date>Tue Mar 29 13:11:06 MSK 2022</creation_date>
+		<height>179</height>
+		<weight>57.67</weight>
+		<birthday>1992-07-30</birthday>
+		<eyeColor>WHITE</eyeColor>
+		<location>-13:-166:0.01 Место: Албания</location>
+	</person>
+	<person>
+		<id>759994101</id>
+		<name>Валентин Иванов</name>
+		<coordinates>148° . 146°</coordinates>
+		<creation_date>Tue Mar 29 13:11:06 MSK 2022</creation_date>
+		<height>184</height>
+		<weight>67.71</weight>
+		<birthday>1992-06-14</birthday>
+		<eyeColor>ORANGE</eyeColor>
+		<location>-136:-126:0.83 Место: Албания</location>
+	</person>
+</set>
