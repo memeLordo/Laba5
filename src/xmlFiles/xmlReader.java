@@ -25,6 +25,9 @@ public class xmlReader extends xmlData {
             String input = sc.nextLine();
             for (int i = 0; i < fill.length; i++)
                 fill[i] = input.contains(type[i]) ? subString(input, type[i]) : fill[i];
+            /**
+             * Счёт значения, пока не достигли </person>
+             */
             if (input.contains("</person>")){
                 result.push(setPerson(fill));
             }

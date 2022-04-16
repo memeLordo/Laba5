@@ -4,7 +4,9 @@ import xmlFiles.xmlData;
 
 import java.io.IOException;
 import java.nio.file.Path;
+import java.util.HashSet;
 import java.util.Scanner;
+import java.util.Set;
 
 import static SetOfCommands.CommandsPack.*;
 
@@ -12,19 +14,22 @@ public class ExecuteFile extends Command{
     public ExecuteFile() {
         super("execute", "description", true);
     }
-
+    private static Set<String> paths = new HashSet<>();
     @Override
     public void go() {
+        String directory = "executeFilesPack";
+        try {
+            xmlData.checkDirectory(directory);
+        } catch (IOException ignored) {
+        }
         String filename  = inputCommand == null ?"commands.txt":inputCommand+".txt";
-//        String directory = "executeFilesPack";
-//        try {
-//            xmlData.checkDirectory(directory);
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//        filename = directory +"/"+filename;
+
+        if(!paths.contains(filename)){
+            paths.add(filename);
+        filename = directory +"/"+filename;
         CreateFile(filename);
-        ScanFile(filename);
+        ScanFile(filename);}
+        else System.out.println("Лол, ваши команды взвали петлю. Больше так не делайте.");
     }
     private void ScanFile(String text){
         Scanner console = null;

@@ -1,4 +1,4 @@
-package SetOfComparators;
+package Comparators;
 
 import Parameters.Person;
 

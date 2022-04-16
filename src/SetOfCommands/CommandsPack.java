@@ -1,7 +1,7 @@
 package SetOfCommands;
 
 import Parameters.Person;
-import SetOfComparators.PersonIdComparator;
+import Comparators.PersonIdComparator;
 import xmlFiles.xmlReader;
 
 import java.util.*;
